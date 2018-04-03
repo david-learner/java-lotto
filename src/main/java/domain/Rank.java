@@ -26,7 +26,7 @@ public enum Rank {
         return winningMoney;
     }
 
-    public static Rank isRank(int matchedCount, boolean bonus) {
+    public static Rank getRank(int matchedCount, boolean bonus) {
         for (Rank rank : Rank.values()) {
             if (rank.isMatched(matchedCount, bonus)) {
                 return rank;

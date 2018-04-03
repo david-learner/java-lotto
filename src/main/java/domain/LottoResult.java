@@ -40,7 +40,7 @@ public class LottoResult {
         if (matchedCount < 3) {
             return false;
         }
-        countPrize(Rank.isRank(matchedCount, bonus));
+        countPrize(Rank.getRank(matchedCount, bonus));
         return true;
     }
 
